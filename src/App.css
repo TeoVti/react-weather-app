@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+}
+.left {
+  flex: 2;
+  height: 100vh;
+  color: white;
+}
+.right {
+  height: 100vh;
+  flex: 1;
+  background-color: rgb(134 134 164 / 21%);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.btm {
+  position: absolute;
+  bottom: 1vh;
+  display: flex;
+}
+.temp {
+  font-size: 20vh;
+  margin-left: 10vh;
+}
+.city {
+  font-size: 10vh;
+  margin-top: 23vh;
+  margin-bottom: auto;
+}
+.date {
+  margin-top: auto;
+  font-size: 43px;
+}
+.description {
+  margin-top: 27vh;
+  font-size: 4vh;
+  margin-left: 10vh;
+}
+.city-date {
+  margin-left: 5vh;
+}
