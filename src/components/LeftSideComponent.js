@@ -11,7 +11,10 @@ function LeftSideComponent(props) {
           <p className="city">{props.city}</p>
           <p className="date">{props.description ? date : ''}</p>
         </div>
-        <p className="description">{props.description}</p>
+        <div className="dai">
+          <p className="description">{props.description}</p>
+          <div className={props.description}></div>
+        </div>
       </div>
     </div>
   );

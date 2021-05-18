@@ -39,8 +39,100 @@
 .description {
   margin-top: 27vh;
   font-size: 4vh;
-  margin-left: 10vh;
+  margin-bottom: 2vh;
 }
 .city-date {
   margin-left: 5vh;
+}
+.dai {
+  margin-left: 10vh;
+}
+.Clouds {
+  background-image: url('./Images/clouds.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+}
+.Clear {
+  background-image: url('./Images/clear.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+}
+.Rain {
+  background-image: url('./Images/rain.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+  margin-top: 4px;
+  margin-bottom: -4px;
+}
+.Drizzle {
+  background-image: url('./Images/drizzle.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+}
+.Snow {
+  background-image: url('./Images/snow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+}
+.Thunderstorm {
+  background-image: url('./Images/thunderstorm.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+}
+.input {
+  border: none;
+  border-bottom: 2px solid #b1b1b1;
+
+  font-size: 25px;
+  outline: none;
+  background: transparent;
+  color: white;
+  flex: 3;
+  margin-right: 5vh;
+  margin-left: 5vh;
+}
+.search {
+  font-size: 3vh;
+  height: 10vh;
+  width: 10vh;
+  border: none;
+  background: #ffa707;
+}
+.form {
+  display: flex;
+}
+h1 {
+  margin: 6vh 0 4vh 5vh;
+}
+.leftp {
+  margin-left: 5vh;
+}
+.rightp {
+  margin-right: 10vh;
+}
+.par {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  font-size: 25px;
+}
+.forecast {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 10vh;
+}
+#forec {
+  width: 7vh;
+}
+.hour {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
 }
