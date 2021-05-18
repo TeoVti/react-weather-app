@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function RightSideComponent(props) {
   const [cityName, setCityName] = useState('vienna');
-  const apiKey = '';
+  const apiKey = 'gtgtgt';
   const [feelsLike, setFeelsLike] = useState();
   const [wind, setWind] = useState();
   const [humidity, setHumidity] = useState();
