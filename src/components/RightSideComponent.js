@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function RightSideComponent(props) {
   const [cityName, setCityName] = useState('vienna');
-  const apiKey = 'gtgtgt';
+  const apiKey = '';
   const [feelsLike, setFeelsLike] = useState();
   const [wind, setWind] = useState();
   const [humidity, setHumidity] = useState();
@@ -30,6 +30,7 @@ function RightSideComponent(props) {
         setTemp6h(data.list[2].weather[0].main);
         setTemp9h(data.list[3].weather[0].main);
       });
+    setCityName('');
   };
 
   let now = new Date();

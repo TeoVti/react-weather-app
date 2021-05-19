@@ -39,7 +39,8 @@
 .description {
   margin-top: 27vh;
   font-size: 4vh;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
+  text-align: center;
 }
 .city-date {
   margin-left: 5vh;
@@ -52,12 +53,14 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
+  width: 10vh;
 }
 .Clear {
   background-image: url('./Images/clear.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
+  width: 10vh;
 }
 .Rain {
   background-image: url('./Images/rain.png');
@@ -66,24 +69,28 @@
   height: 100px;
   margin-top: 4px;
   margin-bottom: -4px;
+  width: 10vh;
 }
 .Drizzle {
   background-image: url('./Images/drizzle.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
+  width: 10vh;
 }
 .Snow {
   background-image: url('./Images/snow.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
+  width: 10vh;
 }
 .Thunderstorm {
   background-image: url('./Images/thunderstorm.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
+  width: 10vh;
 }
 .input {
   border: none;
@@ -129,7 +136,7 @@ p {
   margin-top: 10vh;
 }
 #forec {
-  width: 7vh;
+  width: 10vh;
 }
 .hour {
   margin-top: 0;
