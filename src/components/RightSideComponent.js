@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 function RightSideComponent(props) {
   const [cityName, setCityName] = useState('vienna');
-  const apiKey = '';
   const [feelsLike, setFeelsLike] = useState();
   const [wind, setWind] = useState();
   const [humidity, setHumidity] = useState();
@@ -16,7 +15,7 @@ function RightSideComponent(props) {
 
   const displayData = () => {
     fetch(
-      `https:api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${apiKey}`,
+      `https:api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${process.env.REACT_APP_API_KEY}`,
     )
       .then((response) => response.json())
       .then((data) => {
