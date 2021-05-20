@@ -1,5 +1,3 @@
-import React from 'react';
-
 function LeftSideComponent(props) {
   const d = new Date();
   const date = d.toDateString();

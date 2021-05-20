@@ -47,7 +47,7 @@
     "@types/testing-library__user-event": "^4.2.0",
     "@typescript-eslint/eslint-plugin": "4.21.0",
     "@typescript-eslint/parser": "4.21.0",
-    "@upleveled/eslint-config-upleveled": "1.13.1",
+    "@upleveled/eslint-config-upleveled": "1.13.2",
     "babel-eslint": "10.1.0",
     "eslint": "7.23.0",
     "eslint-config-react-app": "6.0.0",
@@ -60,7 +60,7 @@
     "eslint-plugin-react": "7.23.2",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-testing-library": "4.0.1",
-    "eslint-plugin-unicorn": "31.0.0",
+    "eslint-plugin-unicorn": "32.0.0",
     "typescript": "4.2.4"
   }
 }

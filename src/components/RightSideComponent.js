@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function RightSideComponent(props) {
   const [cityName, setCityName] = useState('vienna');
@@ -10,6 +10,7 @@ function RightSideComponent(props) {
   const [temp9h, setTemp9h] = useState();
 
   const displayData = () => {
+    console.log(process.env);
     fetch(
       `https:api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${process.env.REACT_APP_API_KEY}`,
     )
@@ -32,13 +33,13 @@ function RightSideComponent(props) {
     displayData();
   }, []);
 
-  let now = new Date();
+  const now = new Date();
   now.setHours(now.getHours() + 3);
   const hours = now.getHours();
-  let now1 = new Date();
+  const now1 = new Date();
   now1.setHours(now1.getHours() + 6);
   const hours1 = now1.getHours();
-  let now2 = new Date();
+  const now2 = new Date();
   now2.setHours(now2.getHours() + 9);
   const hours2 = now2.getHours();
   return (
@@ -64,15 +65,15 @@ function RightSideComponent(props) {
       <h1>Weather Details</h1>
       <div className="par">
         <p className="leftp">Feels Like</p>
-        <p className="rightp"> {feelsLike ? feelsLike + '°' : ''}</p>
+        <p className="rightp"> {feelsLike + '°'}</p>
       </div>
       <div className="par">
         <p className="leftp">Wind</p>
-        <p className="rightp">{wind ? wind + ' km/h' : ''}</p>
+        <p className="rightp">{wind + ' km/h'}</p>
       </div>
       <div className="par">
         <p className="leftp">Humidity </p>
-        <p className="rightp">{humidity ? humidity + '%' : ''}</p>
+        <p className="rightp">{humidity + '%'}</p>
       </div>
       <hr />
       <div className="forecast">
