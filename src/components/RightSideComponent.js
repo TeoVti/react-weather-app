@@ -9,10 +9,6 @@ function RightSideComponent(props) {
   const [temp6h, setTemp6h] = useState();
   const [temp9h, setTemp9h] = useState();
 
-  useEffect(() => {
-    displayData();
-  }, []);
-
   const displayData = () => {
     fetch(
       `https:api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${process.env.REACT_APP_API_KEY}`,
@@ -31,6 +27,10 @@ function RightSideComponent(props) {
       });
     setCityName('');
   };
+
+  useEffect(() => {
+    displayData();
+  }, []);
 
   let now = new Date();
   now.setHours(now.getHours() + 3);
