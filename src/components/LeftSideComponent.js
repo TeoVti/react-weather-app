@@ -11,7 +11,7 @@ function LeftSideComponent(props) {
         </div>
         <div className="dai">
           <p className="description">{props.description}</p>
-          <div className={props.description}></div>
+          <div className={props.description} />
         </div>
       </div>
     </div>

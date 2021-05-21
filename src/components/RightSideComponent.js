@@ -31,6 +31,7 @@ function RightSideComponent(props) {
 
   useEffect(() => {
     displayData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const now = new Date();
@@ -78,15 +79,15 @@ function RightSideComponent(props) {
       <hr />
       <div className="forecast">
         <div>
-          <div className={temp3h} id="forec"></div>
+          <div className={temp3h} id="forec" />
           <p className="hour">{hours + ':00'}</p>
         </div>
         <div>
-          <div className={temp6h} id="forec"></div>
+          <div className={temp6h} id="forec" />
           <p className="hour">{hours1 + ':00'}</p>
         </div>
         <div>
-          <div className={temp9h} id="forec"></div>
+          <div className={temp9h} id="forec" />
           <p className="hour">{hours2 + ':00'}</p>
         </div>
       </div>
