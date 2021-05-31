@@ -12,7 +12,6 @@ function RightSideComponent(props) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
   const displayData = () => {
-    console.log(process.env);
     fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${process.env.REACT_APP_API_KEY}`,
     )
