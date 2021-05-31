@@ -9,6 +9,9 @@ function RightSideComponent(props) {
   const [temp6h, setTemp6h] = useState();
   const [temp9h, setTemp9h] = useState();
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const API_KEY = process.env.REACT_APP_API_KEY;
+
   const displayData = () => {
     console.log(process.env);
     fetch(
